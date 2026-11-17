@@ -1,1 +1,1 @@
-# Proyecto-1-Dise-o-de-la-transformaci-n-digital-de-un-sector-usando-IA
+# Proyecto-1-Diseño-de-la-transformacion-digital-de-un-sector-usando-IA
