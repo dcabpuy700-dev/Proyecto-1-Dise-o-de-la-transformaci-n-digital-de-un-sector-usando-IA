@@ -84,7 +84,7 @@ Se proponen cinco tecnologias: tres para planta y dos para negocio.
 
 El diagrama muestra como se organizan la planta (OT) y la gestion (IT) de la empresa, y como la IA influye en los procesos clave.
 
-![diagrama](../src/diagrama_digi.png)
+![diagrama](./diagrama_digi.png)
 
 **Como leer el diagrama**
 
