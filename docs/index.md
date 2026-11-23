@@ -84,50 +84,7 @@ Se proponen cinco tecnologias: tres para planta y dos para negocio.
 
 El diagrama muestra como se organizan la planta (OT) y la gestion (IT) de la empresa, y como la IA influye en los procesos clave.
 
-```mermaid
-flowchart TB
-    subgraph OT["OT - Planta de produccion"]
-        direction TB
-        A["Recepcion de materia prima"] --> B["Coccion y autoclave"]
-        B --> C["Envasado y sellado"]
-        C --> D["Etiquetado y paletizado"]
-        S["Sensores IIoT y PLC"] -.-> B
-        S -.-> C
-        CAM["Camaras de inspeccion"] -.-> C
-        CAM -.-> D
-        SC["SCADA y MES"]
-        S --> SC
-        CAM --> SC
-    end
-
-    subgraph IA["Capa de Inteligencia Artificial"]
-        direction TB
-        M1["Mantenimiento predictivo"]
-        M2["Vision artificial"]
-        M3["Prevision de demanda"]
-        M4["Asistente virtual y analisis de clientes"]
-    end
-
-    subgraph IT["IT - Negocio y gestion"]
-        direction TB
-        ERP["ERP: compras, inventario, finanzas"]
-        CRM["CRM y comercio electronico"]
-        BI["Panel de indicadores BI"]
-        ERP --> BI
-        CRM --> BI
-    end
-
-    SC -->|"Datos de proceso"| M1
-    SC -->|"Imagenes y resultados"| M2
-    M1 -->|"Ordenes de mantenimiento"| ERP
-    M2 -->|"Alertas de calidad y lotes"| ERP
-    ERP -->|"Historico de ventas"| M3
-    CRM -->|"Interacciones y pedidos"| M4
-    M3 -->|"Plan de produccion"| SC
-    M3 -->|"Plan de compras"| ERP
-    M4 --> CRM
-    BI -->|"Decisiones basadas en datos"| SC
-```
+![diagrama](../src/diagrama_digi.png)
 
 **Como leer el diagrama**
 
